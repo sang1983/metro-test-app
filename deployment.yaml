@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: metro-app
+  name: metro-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: metro-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: metro-app
+    spec:
+      containers:
+      - image: sangeetha1511/metro-app:v3
+        name: metro-app
+        resources: {}
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: metro-app-service
+  name: metro-app-service
+spec:
+  ports:
+  - name: 8081-8081
+    port: 8081
+    protocol: TCP
+    targetPort: 8081
+  selector:
+    app: metro-app
+  type: ClusterIP
+status:
+  loadBalancer: {}

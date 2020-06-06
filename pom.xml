@@ -6,7 +6,7 @@
 	<groupId>com.swissre.hackathon.app</groupId>
 	<artifactId>metro-seats-covid-git</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>metro-seats-covid-git</name>
 	<description>Demo project for Spring Boot</description>

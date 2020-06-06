@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: metro-app
+  labels:
+    app: metro-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: metro-app
+  template:
+    metadata:
+      labels:
+        app: metro-app
+    spec:
+      containers:
+      - name: counter
+        image: sangeetha1511/metro-app:v1

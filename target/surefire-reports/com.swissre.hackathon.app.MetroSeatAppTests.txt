@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.swissre.hackathon.app.MetroSeatAppTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.425 sec - in com.swissre.hackathon.app.MetroSeatAppTests
